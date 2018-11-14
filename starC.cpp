@@ -95,7 +95,7 @@ int main(int argc, char *argv[])
   // code that checks if they are both -1; if so, call runTests()
   // then exit.
 
-  runTests();
+ // runTests();
 
   // TODO: Add code that calls the starC function and prints
   // the result on cout (without an extra newline)
