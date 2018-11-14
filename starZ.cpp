@@ -87,15 +87,21 @@ int main(int argc, char *argv[])
 
   // TODO: Add check for parameter
   // and code to print usage message
-
+  if(argc != 2){
+     cerr << "Usage: " << argv[0] << " width height" << endl;
+     exit(1);
+  }
   // TODO: Add code to get width from cmd line arg
   // code that checks if it is -1; if so, call runTests()
   // then exit.
-
-  runTests();
+  int width = stoi(argv[1]); 
+  if(width == -1){
+    runTests();
+    exit(0);
+  } 
 
   // TODO: Add code that calls the starZ function and prints
   // the result on cout (without an extra newline)
-
+  cout << starZ(width); 
   return 0;
 }
