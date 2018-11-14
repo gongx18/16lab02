@@ -91,7 +91,7 @@ int main(int argc, char *argv[])
   // TODO: Add check for parameters
   // and code to print usage message
   if(argc != 3){
-      cout << "Usage: " <<argv[0] << "width heigh" << endl; 
+      cout << "Usage: " <<argv[0] << " width height" << endl; 
       exit(1); 
   }  
 
