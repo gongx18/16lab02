@@ -23,7 +23,10 @@ string starC(int width, int height){
 	result += "\n";  
 
 	for(int j = 1; j < height - 1; j++){
-		result += "*";
+	    result += "*"; 
+	    for(int i = 1; i < width; i++){
+		result += " "; 
+	    }
 		result += "\n"; 
 	}
 
